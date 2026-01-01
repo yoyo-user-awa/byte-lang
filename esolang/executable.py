@@ -15,7 +15,7 @@ class Error:
 parser = argp.ArgumentParser(add_help=False)
 parser.add_argument('-v', '--version', action='version', version='ByteLang v1.0-release')
 parser.add_argument('path', nargs='?', default='@undefined', type=str)
-parser.add_argument('-h', '--help', action='store_true', default=argp.SUPPRESS)
+parser.add_argument('-h', '--help', action='store_true')
 cmdargs = parser.parse_args()
 
 
