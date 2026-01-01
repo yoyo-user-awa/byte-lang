@@ -61,6 +61,3 @@ class Interpreter:
     def __endln() -> None: print()
     def __setvar(self,name:str,val:int) -> None: self.vars.update({name:val})
     def __getvar(self,name:str) -> int: return self.vars.get(name,-616)
-
-interpreter = Interpreter()
-interpreter.exe(open('./code/inp.bytl','r',encoding='utf-8').read())
